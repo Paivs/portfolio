@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: darkblue;
+}
+
+.info-geral {
+    text-align: left;
+    padding: 20px;
+    color: white;
+}
+
+.info-geral h1 {
+    font-weight: bold;
+}
+
+.info-geral h2 {
+    font-weight: normal;
+}
+
+code {
+    font-family: monospace;
+}
+
+.redes{
+    padding: 20px;
+}
+
+.redes a {
+    display: block;
+    margin-bottom: 10px;
+}

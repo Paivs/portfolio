@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Paiva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="./assets/imgs/icon.ico" type="image/x-icon">
+
+    <script>
+        // JavaScript code to change the video link
+
+        // Function to change the video link
+        function changeVideoLink(videoLink) {
+            var iframe = document.getElementById("video-iframe");
+            iframe.src = videoLink;
+        }
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: rgb(15, 23, 42);
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .esquerda {
+            flex: 1;
+            margin-right: 8%;
+            margin-left: 8%;
+            margin-top: 5%;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .lista-projetos {
+            flex: 1;
+            margin-left: 58%;
+            padding-bottom: 8%;
+        }
+
+
+        .info-geral {
+            text-align: left;
+            padding: 20px;
+            color: white;
+            line-height: 0.5;
+        }
+
+        .info-geral h1 {
+            font-weight: bold;
+            font-size: 48px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .info-geral h2 {
+            font-weight: normal;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .info-geral p {
+            font-size: 18px;
+            /* Altere o tamanho da fonte aqui */
+            max-width: 600px;
+            /* Defina o tamanho máximo para a div aqui */
+            margin-bottom: 10px;
+            /* Adicione um espaçamento inferior para o elemento <p> */
+        }
+
+        code {
+            font-family: monospace;
+        }
+
+        .redes {
+            position: fixed;
+            bottom: 10%;
+            left: 8%;
+            padding: 20px;
+        }
+
+        .redes a {
+            margin-bottom: 10px;
+            color: white;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-right: 10px;
+        }
+
+        .main-section {
+            margin-right: 8%;
+            margin-left: 8%;
+            margin-top: 5%;
+        }
+
+        .fab {
+            font-size: 30px;
+            /* Altere o valor para ajustar o tamanho dos ícones */
+        }
+
+        .projeto {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .projeto-container {
+            border-radius: 10px;
+            transition: background-color 0.5s ease;
+            width: 550px;
+            padding: 15px;
+            padding-top: 0px;
+        }
+
+        .projeto-container:hover {
+            background: rgb(22, 34, 61);
+        }
+
+        .projeto-data {
+            width: 100px;
+            background-color: #008b8b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .projeto-funcao {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 5px;
+            color: rgb(255, 255, 255);
+        }
+
+        .projeto-funcao-descricao {
+            font-size: 18px;
+            font-weight: normal;
+            text-align: justify;
+            color: rgb(170, 157, 157);
+            margin: 0;
+        }
+
+        .projeto-descricao {
+            font-size: 18px;
+            max-width: 600px;
+            margin-bottom: 10px;
+            text-align: justify;
+            color: rgb(170, 157, 157);
+        }
+
+        .tags {
+            display: flex;
+        }
+
+        .projeto-projeto {
+            background-color: #008b8b;
+            color: white;
+            border-radius: 20px;
+            padding: 5px 10px;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .video {
+            padding-left: 20px;
+        }
+
+        .lista-projetos-descricao{
+            color: white;
+        }
+
+        .lista-projetos-descricao h1{
+            font-weight: bold;
+            font-size: 48px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .lista-projetos-descricao p{
+            font-weight: normal;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+
+    </style>
+    
+    <script>
+        function changeVideoLink(src) {
+            const projetos = document.querySelectorAll('.projeto-container');
+
+            // Obtenha o elemento do vídeo
+            const videoDiv = document.querySelector('.video');
+
+            const newVideo = document.createElement('iframe');
+            newVideo.setAttribute('width', '750');
+            newVideo.setAttribute('height', '445');
+            newVideo.setAttribute('src', src);
+            newVideo.setAttribute('title', 'YouTube video player');
+            newVideo.setAttribute('frameborder', '0');
+            newVideo.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+            newVideo.setAttribute('allowfullscreen', '');
+
+            // Remova o vídeo atual e adicione o novo vídeo ao div
+            videoDiv.innerHTML = '';
+            videoDiv.appendChild(newVideo);
+        }
+    </script>
+</head>
+
+<body>
+    <section class="main-section">
+        <div class="container">
+            <div class="esquerda">
+
+                <div class="info-geral">
+                    <p><code> /* Olá meu nome é */</code></p>
+                    <h1>Gustavo Paiva</h1>
+                    <h2>Meu objetivo é desenvolver tecnologias inovadoras, acessivas e humanizadas.</h2>
+                    <h2>Veja algum de meus projetos...</h2>
+                </div>
+
+                <div class="video">
+                    <iframe width="750" height="445" src="https://www.youtube.com/embed/mxTBiwRuBr4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+            <div class="lista-projetos">
+
+                <div class="lista-projetos-descricao">
+                    <h1>
+                        Estes são meus projetos.
+                    </h1>
+                    <p>
+                        Dentre eles estão alguns que realizei em minha faculdade, como freelancer e automatizações em minha vida profissional.
+                        Clique em um projeto e veja um vídeo descritivo! 
+                    </p>
+                </div>
+
+                <div class="projeto-container" onclick="changeVideoLink('https://www.youtube.com/embed/mxTBiwRuBr4')">
+                    <div class="projeto">
+                        <p class="projeto-data">2023 - presente</p>
+                        <div>
+                            <h1 class="projeto-funcao">Thelma Armidoro</h1>
+                            <h2 class="projeto-funcao-descricao">Desenvolvedor & Tech Lead</h2>
+                        </div>
+                    </div>
+                    <p class="projeto-descricao">Um aplicativo mobile que aproxima o paciente do seu terapeuta. A
+                        aplicação possui: <br>
+                        - Diários dos sonhos e emoções; <br>
+                        - Cadastro de pacientes e terapeutas.<br>
+                        - Marcar, desmarcar e iniciar consultas; <br>
+                        - Notificações personalizadas para cada paciente.
+                    </p>
+                    <div class="tags">
+                        <p class="projeto-projeto">Java</p>
+                        <p class="projeto-projeto">Spring Boot</p>
+                        <p class="projeto-projeto">JPA</p>
+                        <p class="projeto-projeto">MySQL</p>
+                        <p class="projeto-projeto">React Native</p>
+                        <p class="projeto-projeto">Ubuntu Server</p>
+                    </div>
+                </div>
+
+                <div class="projeto-container" onclick="changeVideoLink('https://www.youtube.com/watch?v=R1tgBxuRqZ8')">
+                    <div class="projeto">
+                        <p class="projeto-data">2022 - 2023</p>
+                        <div>
+                            <h1 class="projeto-funcao">DocManager</h1>
+                            <h2 class="projeto-funcao-descricao">Desenvolvedor & Tech Lead</h2>
+                        </div>
+                    </div>
+                    <p class="projeto-descricao">Um aplicativo desktop que controla as versões e gerencia sua
+                        documentação. A aplicação possui:<br>
+                        - Diários dos sonhos e emoções;<br>
+                        - Marcar, desmarcar e iniciar consultas;<br>
+                        - Notificações personalizadas para cada paciente.<br>
+                    </p>
+                    <div class="tags">
+                        <p class="projeto-projeto">Java</p>
+                        <p class="projeto-projeto">JFrame</p>
+                        <p class="projeto-projeto">JDBC</p>
+                        <p class="projeto-projeto">MySQL</p>
+                        <p class="projeto-projeto">HTML</p>
+                        <p class="projeto-projeto">CSS</p>
+                        <p class="projeto-projeto">Bootstrap</p>]
+                        <p class="projeto-projeto">JavaScript</p>
+                    </div>
+                </div>
+
+
+                <div class="projeto-container" onclick="changeVideoLink('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+                    <div class="projeto">
+                        <p class="projeto-data">2023 - presente</p>
+                        <div>
+                            <h1 class="projeto-funcao">Rifas Online</h1>
+                            <h2 class="projeto-funcao-descricao">Desenvolvedor & Projetista</h2>
+                        </div>
+                    </div>
+                    <p class="projeto-descricao">Um site com toda a infra para realizar suas rifas e comprar seus
+                        números. A aplicação possui:<br>
+                        - Compra e venda de rifas;<br>
+                        - Pagamento;<br>
+                        - Cadastro de usuários.<br>
+                    </p>
+                    <div class="tags">
+                        <p class="projeto-projeto">Java</p>
+                        <p class="projeto-projeto">Spring Boot</p>
+                        <p class="projeto-projeto">JPA</p>
+                        <p class="projeto-projeto">Node.JS</p>
+                        <p class="projeto-projeto">Express</p>
+                        <p class="projeto-projeto">EJS</p>
+                        <p class="projeto-projeto">MySQL</p>
+                    </div>
+                    <div class="tags">
+                        <p class="projeto-projeto">HTML</p>
+                        <p class="projeto-projeto">CSS</p>
+                        <p class="projeto-projeto">Bootstrap</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="redes">
+                <a href="https://github.com/Paivs" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gustavo-paiva-7053a6210" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5511980697346" target="_blank"><i
+                        class="fab fa-whatsapp"></i></a>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
